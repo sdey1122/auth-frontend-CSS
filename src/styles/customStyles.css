@@ -1,4 +1,3 @@
-/* customStyles.css */
 @keyframes backgroundShift {
   0% {
     background-position: 0% 50%;
@@ -20,6 +19,17 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes textEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -82,4 +92,19 @@
   background: linear-gradient(-45deg, #234e52, #7b4397, #234e52, #7b4397);
   background-size: 400% 400%;
   animation: navbarShift 20s ease infinite;
+}
+
+.homepage-background {
+  background: linear-gradient(-45deg, #7b4397, #dc2430, #7b4397, #dc2430);
+  background-size: 400% 400%;
+  animation: backgroundShift 20s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-text {
+  text-align: center;
+  animation: textEntrance 2s ease-out;
 }
