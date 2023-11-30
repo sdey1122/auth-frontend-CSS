@@ -1,0 +1,7 @@
+/* global.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* Add any other global styles you need */
+}
